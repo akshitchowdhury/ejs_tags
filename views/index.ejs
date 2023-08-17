@@ -10,10 +10,11 @@
 <body>
   <h1>
     <!-- Tite goes here -->
-    <%= data.title  %>
+    <%= title  %>
   </h1>
   <p>Current second:
     <!-- Current second goes here -->
+    <%= seconds  %>
   </p>
   if (seconds % 2===0) {
   <ul>
@@ -26,6 +27,7 @@
   }
   <p>
     <!-- HTML content goes here -->
+
   </p>
 
   <%- include('footer.ejs') %>
