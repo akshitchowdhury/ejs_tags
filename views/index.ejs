@@ -16,8 +16,14 @@
     <!-- Current second goes here -->
     <%= seconds  %>
   </p>
+  <% for( let index = 0; index < items.length; index++ ) { %>
+  
+  
   if (seconds % 2===0) {
   <ul>
+    <li>
+      <%= items[index]  %>
+    </li>
     <!-- List goes here if current second is even. -->
     <!-- Otherwise it should display the following: -->
     <!-- <p>No items to display</p> -->
@@ -25,6 +31,8 @@
   } else {
   <p>No items to display</p>
   }
+  
+  <% } %>
   <p>
     <!-- HTML content goes here -->
 
